@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <h3>Contact From</h3>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <p> <label for="FristName">FirstName</label><br>
+                <input type="text" name="FirstName" id="FirstName" placeholder="Firstname" size="25" maxlength="10">
+            </p>
+            <p>
+                <label for="LastName"> LastName </label><br>
+                <input type="text" name="LastName" id="LastName" placeholder="Lastname" size="25" maxlength="10">
+            </p>
+            <p>
+                <label for="Email"> Email</label><br>
+                <input type="email" name="Email" id="Email" placeholder="example@gmail.com" size="25" maxlength="20" required>
+            </p>
+            <p>
+                <label for="Gender"></label> Gender <br>
+                <select name="Gender" id="Gender" maxlength="20">
+                    <option value="">select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </p>
+            <p>
+                <label for="age">Age</label> <br>
+                <input type="number" name="age" id="age" min="18" max="99" required>
+            </p>
+            <p>
+                <label> Date of birth </label><br>
+                <input type="date" name="DOB" id="DOB">
+            </p>
+            <p>
+                <label for="price">Range</label> <br>
+                <input type="range" name="price" id="price" min="0" max="1000" step="5">
+            </p>
+       
+            <p> Material status <br>
+                <input type="radio" name="request" value="Single" checked><label for=" single"> single</label>
+                <input type="radio" name="request" value="Married"><label for="Married"> Married</label>
+            </p>
+            <p>
+                <label>Hobbies</label> Hobbies <br>
+                <input type="checkbox" name="Hobbies[]" value="Photography">Photography
+                <input type="checkbox" name="Hobbies[]" value="Games">Games
+                <input type="checkbox" name="Hobbies[]" value="xhatting">Chatting
+                <input type="checkbox" name="Hobbies[]" value="coding">Coding
+                <input type="checkbox" name="Hobbies[]" value="drinking">Drinking
+                <input type="checkbox" name="Hobbies[]" value="driving">driving
+                <input type="checkbox" name="Hobbies[]" value="eating">eating
+            </p>
+            <p> <label> Area of interest </label> <br>
+                <select name="interest" id="interest">
+                    <option value="">select</option>
+                    <option value="Web development">web development</option>
+                    <option value="Frontend development">Frontend development</option>
+                    <option value="Backend development">Backend development</option>
+                    <option value="Fullstack development">Fullstack development</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Java script">Java script</option>
+                    <option value="Html">Html</option>
+                    <option value="CSS">CSS</option>
+                    <option value="C++">C++</option>
+                    <option value="kotline">kotline</option>
+                    <option value="c">c</option>
+                </select>
+            </p>
+            <p> <label>Resume </label> <br>
+                <input type="file" value="resume">
+            </p>
+            <p>
+                <label for="Website"> Website</label> <br>
+                <input type="url" name="website" id="website">
+            </p>
+            <p>
+                <label for="time">Time</label> <br>
+                <input type="time" name="time" id="time" >
+            </p>
+            <p>
+                <label for="Week"> Week</label>
+                <input type="week" name="week" id="week">
+            </p>
+            <p>
+                <label for="search"> search</label>
+                <input type="search" name="search" id="search">
+            </p>
+            <p>
+                <label for="Decribe yourself"> Decribe yourself</label> <br>
+                <textarea name="Decribe yourself" id="Decribe yourself" cols="30" rows="5"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="submit">
+            </p>
+        </form>
+    </body>
+</html>
